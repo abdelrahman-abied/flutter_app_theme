@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_theme/theme/app_color_theme.dart';
 import 'package:flutter_app_theme/theme/app_gradient_theme.dart';
+import 'package:flutter_app_theme/theme/app_image_theme.dart';
 import 'package:flutter_app_theme/theme/app_shadow_theme.dart';
 import 'package:flutter_app_theme/theme/app_text_theme.dart';
 
@@ -18,7 +19,8 @@ class AppTheme {
           AppShadowTheme(),
           AppGradientTheme.generate(colorScheme: lightColorScheme),
           AppColorTheme(),
-          AppTextTheme()
+          AppTextTheme(),
+          AppImageTheme(),
         ],
       );
 
@@ -30,7 +32,8 @@ class AppTheme {
           AppShadowTheme.dark(),
           AppGradientTheme.generate(colorScheme: darkColorScheme),
           AppColorTheme.dark(),
-          AppTextTheme.dark()
+          AppTextTheme.dark(),
+          AppImageTheme.dark(),
         ],
       );
 

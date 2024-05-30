@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_theme/theme/app_color_theme.dart';
 import 'package:flutter_app_theme/theme/app_gradient_theme.dart';
+import 'package:flutter_app_theme/theme/app_image_theme.dart';
 import 'package:flutter_app_theme/theme/app_shadow_theme.dart';
 import 'package:flutter_app_theme/theme/app_text_theme.dart';
 
@@ -13,6 +14,8 @@ extension ThemeDataExtension on ThemeData {
       extension<AppGradientTheme>() ?? AppGradientTheme.generate(colorScheme: colorScheme);
 
   AppTextTheme get appTextTheme => extension<AppTextTheme>() ?? AppTextTheme();
+
+  AppImageTheme get appImageTheme => extension<AppImageTheme>() ?? AppImageTheme();
 }
 
 extension BuildContextExtension on BuildContext {
@@ -23,4 +26,6 @@ extension BuildContextExtension on BuildContext {
   AppGradientTheme get appGradientTheme => Theme.of(this).appGradientTheme;
 
   AppTextTheme get appTextTheme => Theme.of(this).appTextTheme;
+
+  AppImageTheme get appImageTheme => Theme.of(this).appImageTheme;
 }

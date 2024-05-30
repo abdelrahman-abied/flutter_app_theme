@@ -87,6 +87,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(height: 20),
+            Image.asset(
+              Theme.of(context).appImageTheme.logo,
+              width: 100,
+              height: 100,
+            ),
+            const SizedBox(height: 20),
             SizedBox(
               height: 100,
               width: 100,
