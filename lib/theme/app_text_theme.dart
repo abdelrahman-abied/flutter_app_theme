@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_theme/theme/app_text_style.dart';
 
 class AppTextTheme extends ThemeExtension<AppTextTheme> {
   final TextStyle headline1;
@@ -10,7 +11,7 @@ class AppTextTheme extends ThemeExtension<AppTextTheme> {
     this.headline1 = const TextStyle(fontSize: 44, fontWeight: FontWeight.bold),
     this.headline2 = const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
     this.headline3 = const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-    this.headline4 = const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+    this.headline4 = AppTypography.body1,
   });
 
   AppTextTheme.dark()

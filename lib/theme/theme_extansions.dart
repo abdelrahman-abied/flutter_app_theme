@@ -19,6 +19,7 @@ extension ThemeDataExtension on ThemeData {
 }
 
 extension BuildContextExtension on BuildContext {
+  ColorScheme get colorScheme => Theme.of(this).colorScheme;
   AppColorTheme get colorTheme => Theme.of(this).colorTheme;
 
   AppShadowTheme get appShadowTheme => Theme.of(this).appShadowTheme;

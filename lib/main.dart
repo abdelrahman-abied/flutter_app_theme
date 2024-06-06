@@ -46,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: context.colorScheme.inversePrimary,
         title: Text(
           widget.title,
           style: TextStyle(
-            color: Theme.of(context).colorTheme.textColor,
+            color: context.colorTheme.textColor,
           ),
         ),
         leading: Consumer(builder: (context, ref, child) {
