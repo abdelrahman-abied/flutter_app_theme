@@ -5,7 +5,7 @@ class AppImageTheme extends ThemeExtension<AppImageTheme> {
   final String background;
 
   AppImageTheme({
-    this.logo = 'assets/light.jpeg',
+    this.logo = 'assets/light.png',
     this.background = 'assets/background.jpg',
   });
   AppImageTheme.dark()
