@@ -24,23 +24,25 @@ class AppGradientTheme extends ThemeExtension<AppGradientTheme> {
       ),
     );
   }
-  
+
   @override
   ThemeExtension<AppGradientTheme> copyWith() {
     return AppGradientTheme(
       backgroundGradient: backgroundGradient,
     );
   }
-  
+
   @override
   ThemeExtension<AppGradientTheme> lerp(covariant ThemeExtension<AppGradientTheme>? other, double t) {
     if (other == null) {
       return this;
     }
     return AppGradientTheme(
-     backgroundGradient:  LinearGradient(colors: []),
+      backgroundGradient: _transparentGradient,
     );
   }
-
- 
 }
+
+const _transparentGradient = LinearGradient(
+  colors: [Colors.transparent, Colors.transparent],
+);
